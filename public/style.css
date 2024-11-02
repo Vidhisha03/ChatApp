@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #caedf1;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 700px;
+    max-width: 80%;
+    border: 1px solid #2d1bcf;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+}
+
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    background: #fafafa;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming {
+    background-color: rgb(58, 135, 250);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    margin-bottom: 8px;
+}
+
+.outgoing {
+    background-color: rgb(183, 118, 243);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-bottom: 8px;
+}
+
+.message h4 {
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+    border-top: 1px solid #e0e0e0;
+    resize: none;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Smooth scrolling for better UX */
+.message__area {
+    scroll-behavior: smooth;
+}
