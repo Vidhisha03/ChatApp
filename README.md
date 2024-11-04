@@ -39,7 +39,7 @@ Follow these instructions to set up and run Chatterbox on your local machine.
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/ChatApp.git
+   git clone https://github.com/Vidhisha03/ChatApp
    cd ChatApp
    ```
 
